@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>272</width>
+    <height>213</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout_4">
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout" stretch="0,0">
+     <item>
+      <widget class="QLabel" name="res_lbl">
+       <property name="enabled">
+        <bool>true</bool>
+       </property>
+       <property name="text">
+        <string>voxelgrid resolution</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QSpinBox" name="res_spn">
+       <property name="minimum">
+        <number>2</number>
+       </property>
+       <property name="maximum">
+        <number>512</number>
+       </property>
+       <property name="singleStep">
+        <number>2</number>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <widget class="Line" name="break1_line">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QFrame" name="targetMesh_frame">
+     <property name="enabled">
+      <bool>true</bool>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::NoFrame</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Plain</enum>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout_5">
+      <property name="spacing">
+       <number>6</number>
+      </property>
+      <property name="topMargin">
+       <number>2</number>
+      </property>
+      <property name="bottomMargin">
+       <number>2</number>
+      </property>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_11">
+        <item>
+         <widget class="QLabel" name="targetModel_lbl">
+          <property name="text">
+           <string>Target Model:</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <layout class="QVBoxLayout" name="verticalLayout">
+          <item>
+           <widget class="QLineEdit" name="targetMesh_edit">
+            <property name="enabled">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="targetSkeleton_edit"/>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <widget class="QPushButton" name="loadTargetModel_btn">
+          <property name="enabled">
+           <bool>true</bool>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>32</width>
+            <height>16777215</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>&lt;--</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="Line" name="break2_line">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout_6">
+     <item>
+      <widget class="QPushButton" name="compute_btn">
+       <property name="text">
+        <string>Compute</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+  <zorder>break2_line</zorder>
+  <zorder>targetMesh_frame</zorder>
+  <zorder>break1_line</zorder>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
