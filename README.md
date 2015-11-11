@@ -4,7 +4,7 @@ Voxelization is required to obtain the volume domain for the Biharmonic energy.
 
 [Bounded biharmonic weights for real-time deformation]
 
-
+Dev Envirnonment: WingIDE + PySide + Visual studio 2013, Python and C++.
 
 Installation: 
 
